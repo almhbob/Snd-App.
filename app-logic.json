@@ -1,0 +1,22 @@
+{
+  "app_name": "Snd",
+  "version": "1.0.0",
+  "admin_controls": {
+    "verification_system": "Manual Admin Approval",
+    "required_docs": ["National_ID", "Skill_Certificate"],
+    "visibility_rule": "Show ONLY if Status == 'Verified'"
+  },
+  "user_roles": {
+    "admin": {
+      "permissions": ["Approve_Providers", "Ban_Users", "View_Private_IDs"],
+      "identity": "Asim_Admin"
+    },
+    "customer": {
+      "permissions": ["Search_Services", "Rate_Providers", "Contact_Verified"]
+    }
+  },
+  "branding": {
+    "style": "Sudanese Simple & Professional",
+    "primary_font": "Arabic Calligraphy (Handmade by Asim)"
+  }
+}
